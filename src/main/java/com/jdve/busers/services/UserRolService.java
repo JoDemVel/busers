@@ -1,6 +1,7 @@
 package com.jdve.busers.services;
 
 import com.jdve.busers.domain.entities.UserRolId;
+import com.jdve.busers.dto.RolDTO;
 import com.jdve.busers.dto.UserRolDTO;
 
 import java.util.List;

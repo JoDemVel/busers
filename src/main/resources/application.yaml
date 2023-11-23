@@ -4,3 +4,7 @@ spring:
 
   application:
     name: Backend Users
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

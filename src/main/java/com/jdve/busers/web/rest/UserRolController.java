@@ -1,6 +1,5 @@
 package com.jdve.busers.web.rest;
 
-import com.jdve.busers.domain.entities.User;
 import com.jdve.busers.domain.entities.UserRolId;
 import com.jdve.busers.dto.UserRolDTO;
 import com.jdve.busers.services.UserRolService;

@@ -1,15 +1,21 @@
 package com.jdve.busers.services.implement;
 
+import com.jdve.busers.domain.entities.Rol;
+import com.jdve.busers.domain.entities.User;
+import com.jdve.busers.domain.entities.UserRol;
 import com.jdve.busers.domain.entities.UserRolId;
-import com.jdve.busers.dto.UserDetailDTO;
+import com.jdve.busers.dto.RolDTO;
 import com.jdve.busers.dto.UserRolDTO;
 import com.jdve.busers.exceptions.EntityNotFoundException;
-import com.jdve.busers.exceptions.InvalidArgumentException;
 import com.jdve.busers.exceptions.InvalidIdException;
+import com.jdve.busers.repositories.RolRepository;
+import com.jdve.busers.repositories.UserRepository;
 import com.jdve.busers.repositories.UserRolRepository;
 import com.jdve.busers.services.UserRolService;
+import com.jdve.busers.services.mapper.RolMapper;
 import com.jdve.busers.services.mapper.UserRolMapper;
 import com.jdve.busers.utils.ErrorMessages;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
