@@ -1,5 +1,6 @@
 package com.jdve.busers.domain.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -23,6 +24,7 @@ public class UserDetail {
     @Column(name = "last_name")
     private String lastName;
     private Integer age;
+    @JsonFormat(pattern = "yyyy-mm-dd", shape = JsonFormat.Shape.STRING)
     @Column(name = "birth_day")
     private LocalDate birthDay;
     @OneToOne
